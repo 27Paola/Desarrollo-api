@@ -1,3 +1,6 @@
+const { request } = require("express");
+const {v4: uuid} = require("uuid");
+const { create } = require("../models/Series");
 const Workout = require("../models/Series");
 
 const getAllWorkouts = () => { 
@@ -9,8 +12,16 @@ const getOneWorkout = () => {
     return; 
 };
 
-const createNewWorkout = () => { 
-    return; 
+const createNewWorkout = (newWorkout) => { 
+    const workoutToinsert ={
+        ...newWorkout,
+        id: uuid(),
+        createdAT: new Date().toLocaleString("en-US", { timezone: "UTC"} ),
+        updateAt: new Date().toLocaleString("en-US", { timezone: "UTC"} ),
+    } 
+
+    const  createdWorkout = Workout.createNewWorkout(workoutToinsert);
+    return createNewWorkout;
 };
 
 const updateOneWorkout = () => { 

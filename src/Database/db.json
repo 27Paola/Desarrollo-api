@@ -1,0 +1,46 @@
+{
+    
+    "series": [   
+    {
+        "seriesId": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+        "name": "Legacies",
+        "chapter": "15",
+        "chapter_time": "45.50",
+        "release_date": "2004"
+    },
+    {
+        "clientId": "d8be2362-7b68-4ea4-a1f6-03f8bc4eede7",
+        "name": "Merlina",
+        "chapter": "16",
+        "chapter_time": "50",
+        "release_date": "2022"
+    },
+    {
+        "clientId": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+        "name": "ControlZ",
+        "chapter": "18",
+        "chapter_time": "30",
+        "release_date":"2021"
+    }
+],
+    "authors": [
+    {
+        "seriesId":"",
+        "orderPoundId": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+        "sum": "3",
+        "delivery_date": "02/03/2023"
+    },
+    {
+        "seriesId":"",
+        "orderPoundId": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+        "sum": "3",
+        "delivery_date": "02/03/2023"
+    },
+    {
+        "seriesId":"",
+        "orderPoundId": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+        "sum": "3",
+        "delivery_date": "02/03/2023"
+    }
+]
+}
