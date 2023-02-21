@@ -5,6 +5,14 @@ const getAllWorkouts = () => {
     return DB.workouts;
 };
 
+const getOneWorkout = (workoutId) => {
+    const workout = DB.workout.find ((workout) => workout.id === workoutId);
+    if(!workout){
+        return;
+    }
+    return workoutId;
+}
+
 const createdWorkout = (newWorkout) => {
     const isAlreadyAdded =
         DBMongo.workouts.findIndex((workout) => workout.name === newWorkout.name) > -1;
@@ -19,4 +27,4 @@ const createdWorkout = (newWorkout) => {
 }
 
 
-module.exports = { getAllWorkouts, createdWorkout };
+module.exports = { getAllWorkouts, getOneWorkout, createdWorkout};
